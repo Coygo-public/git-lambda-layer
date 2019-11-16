@@ -6,7 +6,7 @@ export CURL_VERSION=7.67.0
 rm layer.zip
 
 docker run --rm -v "$PWD":/tmp/layer lambci/yumda:2 bash -c "
-  yum install -y git-${GIT_VERSION} curl-${CURL_VERSION} && \
+  yum install -y git-${GIT_VERSION} curl && \
   cd /lambda/opt && \
   zip -yr /tmp/layer/layer.zip .
 "
