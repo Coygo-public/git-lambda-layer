@@ -1,7 +1,7 @@
 #!/bin/sh
 
 export GIT_VERSION=2.24.0
-export CURL_VERSION=7.67.0
+export CURL_VERSION=7.61.1
 
 rm layer.zip
 
